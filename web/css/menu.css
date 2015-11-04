@@ -1,0 +1,114 @@
+.site-menu{
+  position: absolute;
+  background-color: white;
+  height: 100%;
+  width: inherit;
+}
+.title{
+	position: relative;
+	top: 130px;
+  width: 500px;
+	margin: auto;
+	border: 4px solid;
+	text-align: center;
+	font-size: 400%;
+
+}
+.title span{
+	position: relative;
+	top: 40%;
+}
+
+.words{
+	position: relative;
+	top: 150px;
+	margin: auto;
+	text-align: center;
+	font-size: 35px;
+}
+.category{
+	position: relative;
+  top: 170px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+#category li{
+	margin-left: 30px;
+	transition: left .6s ease-in-out, width .6s ease-in-out;
+	transition-timing-function: ease-in-out, ease-in-out;
+}
+
+#category{
+	padding-left: 0px;
+	margin: 0px;
+}
+
+#category li input{
+	border: none;
+	font-size: 150%;
+	background-color: inherit;
+	font-family: 'Raleway', sans-serif;
+}
+
+.category form{
+	float: left;
+	}
+
+.products{
+  position: relative;
+  top: 300px;
+  width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.products ul{
+  list-style: none;
+}
+.products li{
+  position:relative;
+  width: 200px;
+  margin: 20px;
+  padding: 0px;
+}
+.products li img {
+  display: block;
+}
+.products li:hover{
+  outline: 1px solid black;
+  z-index: 10;
+}
+.products li:hover .amount {
+  visibility: visible;
+}
+
+.amount {
+  visibility: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.amount input[name = "field"]{
+  width: 45px;
+  text-align: center;
+  margin: 0px 5px;
+}
+.amount input[type="image"]{
+  margin: 0px 10px;
+}
+
+.categname{
+  position: relative;
+  width: inherit;
+  top: 220px;
+  text-align: center;
+  font-size: 24px;
+  color: brown;
+}

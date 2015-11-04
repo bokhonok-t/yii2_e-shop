@@ -1,0 +1,171 @@
+@font-face {
+    font-family: mr de haviland;
+    src: local("mr de haviland"),
+		url(../newfont.ttf);
+}
+body{
+  background: url("../img/сладости.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	margin: 0px;
+}
+img {
+	max-width: 100%;
+	height: auto;
+  opacity: 1;
+}
+
+.center{
+	position: relative;
+	top: 250px;
+	width: 80%;
+	height: 400px;
+	margin: auto;
+	background: rgb(34,34,34); /* for IE */
+	background: rgba(255,255,255,0.6);
+	color: black;
+}
+
+.caption{
+	position: absolute;
+	top: 9%;
+	left: 3%;
+	width: 93.1%;
+	height: 50%;
+  padding: 25px 0;
+	border: 4px solid;
+	text-align: center;
+	font-size: 500%;
+}
+
+.caption span{
+	position: relative;
+}
+
+.desc{
+	position: absolute;
+	top: 58%;
+	left: 3%;
+	height: 36%;
+	width: 36%;
+	border-left: 4px solid;
+	border-bottom: 4px solid;
+}
+.desc p{
+	position: relative;
+	font-size: 180%;
+/*	width: 100%;*/
+	margin: auto;
+	font-weight: 600;
+	font-family: inherit;
+	text-align: center;
+	padding: 30px 10px 0px 10px;
+}
+
+.pic{
+	position: absolute;
+	top: 58%;
+	left: 39%;
+	height: 36%;
+	width: 22%;
+	border-bottom: 4px solid;
+	border-left: 4px solid;
+}
+.pic img{
+	position: relative;
+  width: 100%;
+	margin: auto;
+}
+
+.button{
+	position: absolute;
+	top: 58%;
+	left: 61%;
+	height: 36%;
+	width: 35%;
+  padding: 50px 0;
+	border-bottom: 4px solid;
+	border-right: 4px solid;
+	border-left: 4px solid;
+	background-color: black;
+	text-align: center;
+	cursor: pointer;
+}
+
+.button a{
+	position: relative;
+	color: white;
+	font-size: 180%;
+	font-family: 'Raleway', sans-serif;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 1500px){
+
+	#navigation li a {
+		font-size: 80%;
+   }
+	.center{
+		width: 75%;
+		position: relative;
+		margin: auto;
+		font-size: 80%;
+	}
+	.pic img{
+		width: 80%;
+		top: 25%;
+	}
+}
+
+@media screen and (max-width: 800px){
+	#navigation li a {
+		font-size: 80%;
+   }
+	.center{
+		position: relative;
+		width: 75%;
+		height: 40%;
+		margin: auto;
+		font-size: 70%;
+	}
+/*
+	.pic img{
+		top: 25%;
+	}
+*/
+}
+
+@media screen and (max-width: 768px){
+	#navigation li a {
+		font-size: 80%;
+   }
+	.center{
+		position: absolute;
+		width: 100%;
+		margin: 0px;
+		left: 0px;
+		font-size: 70%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+   html {
+      -webkit-text-size-adjust: none;
+   }
+   #navigation li a {
+      font-size: 80%;
+   }
+	.center{
+		font-size: 50%;
+		height: 40%;
+	}
+
+}
+
+@media screen and (max-width: 360px){
+	.center{
+		font-size: 40%;
+	}
+}
