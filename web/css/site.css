@@ -1,5 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,200,300,100,500,700,600,800,900);
 @import url(/newfont.ttf);
+@font-face {
+    font-family: mr de haviland;
+    src: local("mr de haviland"),
+		url(../newfont.ttf);
+}
 body{
   font-family: 'Raleway', sans-serif;
 }

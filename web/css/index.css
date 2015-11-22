@@ -1,8 +1,4 @@
-@font-face {
-    font-family: mr de haviland;
-    src: local("mr de haviland"),
-		url(../newfont.ttf);
-}
+
 body{
   background: url("../img/сладости.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;

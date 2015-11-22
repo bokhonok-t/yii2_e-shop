@@ -12,10 +12,9 @@ use app\models\Category;
 use app\models\Product;
 use yii\helpers\Url;
 
-class SiteController extends Controller
-{
-    public function behaviors()
-    {
+class SiteController extends Controller {
+
+    public function behaviors() {
         return [
             'access' => [
                 'class' => AccessControl::className(),
@@ -50,9 +49,9 @@ class SiteController extends Controller
         ];
     }
 
-    public function actionIndex()
-    {
-        return $this->render('index');
+    public $defaultAction = 'home';
+    public function actionHome() {
+        return $this->render('home');
     }
 
     public function actionLogin()
@@ -101,13 +100,13 @@ class SiteController extends Controller
         ]);
     }
 
-  public function actionAddToCart($id){
-    $cart = new ShoppingCart();
-    $model = Product::findOne($id);
-    if ($model) {
-      $cart->put($model, 1);
-      return $this->redirect([cart-view]);
+    public function actionAddToCart($id){
+      $cart = new ShoppingCart;
+      $model = Product::findOne($id);
+      if ($model) {
+        $cart->put($model, 1);
+        return $this->redirect(['cart-view']);
+      }
+      throw new NotFoundHttpException();
     }
-    throw new NotFoundHttpException();
-  }
 }

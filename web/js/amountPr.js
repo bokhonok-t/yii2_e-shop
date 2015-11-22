@@ -10,12 +10,12 @@ $(function() {
 	$('input').each(function() {
 		var $input = $(this);
 		$input.prev('a.minus').click(function() {
-		    $input.val ( Math.max( parseInt( $input.val() )-50, 100 ) );
+		    $input.val(Math.max(parseFloat($input.val())-0.1, 0.4));
      		    return false;
 		});
 
 		$input.next('a.plus', this.parentNode).click(function() {
-		    $input.val ( parseInt( $input.val() )+50 );
+		    $input.val(parseFloat(parseFloat(($input.val()) +0.1).toFixed(1)) );
 		    return false;
 		});
 
